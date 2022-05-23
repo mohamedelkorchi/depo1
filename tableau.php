@@ -173,7 +173,7 @@ $departements = array(
     "Bretagne" => array("Côtes d'Armor", "Finistère", "Ille-et-Vilaine", "Morbihan"),
     "Grand-Est" => array("Ardennes", "Aube", "Marne", "Haute-Marne", "Meurthe-et-Moselle", "Meuse", "Moselle", "Bas-Rhin", "Haut-Rhin", "Vosges"),
     "Normandie" => array("Calvados", "Eure", "Manche", "Orne", "Seine-Maritime")
-); 
+); ksort($departements);
 
 foreach ($departements as  $region => $departement)
 { 
@@ -182,10 +182,10 @@ foreach ($departements as  $region => $departement)
   
     foreach ($departement as $dep)
     { 
-         //echo $dep." <br>";
+         echo $dep." <br>";
          
     }
-    echo "il y a ". sizeof($departement)." departements dans cette region.<br>";       
+   //echo "il y a ". sizeof($departement)." departements dans cette region.<br>";       
 }
 ?>
 
