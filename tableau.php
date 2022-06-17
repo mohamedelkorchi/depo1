@@ -152,13 +152,13 @@ $capitales = array(
 ); //asort ($capitales);
 //ksort ($capitales); 
 //sort ($capitales);
-//foreach ($capitales as $capitale => $pays)
+foreach ($capitales as $capitale => $pays)
 {
-    //echo $capitale." => ".$pays. "<br> ";
+    echo $capitale." => ".$pays. "<br> ";
     //echo $pays." => ".$capitale.'<br>';
    //echo (sort ($capitales));
   // echo "[".$capitale."] = ".$pays."<br>";
-  echo " Il y a ". count($capitales)." capitales.";
+  //echo " Il y a ". count($capitales)." capitales.";
 }
 ?>
 
