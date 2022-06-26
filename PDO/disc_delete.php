@@ -1,4 +1,8 @@
 <?php
+     session_start();
+     if(!isset($_SESSION['user']))
+      header('Location:connexion.php');
+
     // Contrôle de l'ID (si inexistant ou <= 0, retour à la liste) :
      if (!(isset($_GET['id'])) || intval($_GET['id']) <= 0) {
         header("Location: discs.php?erreur=vide" );
