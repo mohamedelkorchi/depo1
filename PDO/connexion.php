@@ -10,7 +10,7 @@
     <title>Connexion</title>
 </head>
 <body>
-<div class='login-form'>
+<div class='container-fluid col-12'>
 <?php 
     if(isset($_GET['login_err']))
     {
@@ -45,24 +45,23 @@
         }
     }
 ?>    
+<div class='card border-0 mb-1 col-lg-12 align-items-center mt-5' style='width 40%'>
     <form action="connexion_script.php" method='post'>
-        <h2 class='text-center' >Connexion</h2>
-        <div class='form-group' >
-            <input type="email" name='email' class='form-control' placeholder='Email' required='required' autocomplete='off'>
-        </div>
-        <div class='form-group' >
-            <input type="password" name='password' class='form-control' placeholder='Mot de passe' required='required' autocomplete='off'>
-        </div>
-        <div class='form-group'>
-            <button type='submit' class='btn btn-primary btn-block'>Connexion</button>
-        </div>
-        <div class='form-group'>
-                    <a href='inscription.php' class='btn btn-danger btn-block'>Inscription</a>
-        </div>
+            <h2 class='text-center' >Connexion</h2>
+            <div class='form-group' >
+                <input type="text" name='email' class='form-control' placeholder='Email' required='required' autocomplete='off'>
+            </div>
+            <div class='form-group' >
+                <input type="password" name='password' class='form-control' placeholder='Mot de passe' required='required' autocomplete='off'>
+            </div>
+            <div class='form-group'>
+                <button type='submit' class='btn btn-primary btn-block'>Connexion</button>
+            </div>
+            <div class='form-group'>
+                        <a href='inscription.php' class='btn btn-danger btn-block'>Inscription</a>
+            </div>
     </form>
-
-
-
+</div>
 </div>
 </body>
 </html>

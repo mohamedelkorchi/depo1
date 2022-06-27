@@ -52,6 +52,14 @@ INSERT INTO disc (disc_id, disc_title, disc_year, disc_picture, disc_label, disc
 	(13, 'London Calling', 1971, 'London Calling.jpeg', 'CBS', 'Punk, New Wave', 33.00, 10),
 	(14, 'Beggars Banquet', 1968, 'Beggars Banquet.jpeg', 'Rolling Stones Records', 'Blues Rock, Classic Rock', 33.00, 1),
 	(15, 'Laboratory of sound', 1995, 'Laboratory of sound.jpeg', 'Rebel Rec.', 'Rock', 33.00, 9);
-;
+
+create table user (
+user_id int primary key auto_increment,
+user_pseudo varchar(100),
+user_email VARCHAR(100),
+user_password text,
+user_ip VARCHAR(20),
+user_date_inscrip datetime 
+);
 
 

@@ -5,13 +5,13 @@
 
     if(isset($_POST['email']) && isset($_POST['password']))
     {
-        $email = htmlspecialchars($_POST['email']);
+        $email = htmlspecialchars($_POST["email"]);
         $password = htmlspecialchars($_POST['password']);
-
-        $check = $db->prepare('SELECT user_pseudo, user_email, user_password FROM user WHERE user_email = ?');
+        $check = $db->prepare("SELECT user_pseudo, user_email, user_password FROM user WHERE user_email = ?");
         $check->execute(array($email));
-        $data = $check->fetch(PDO::FETCH_OBJ);
+        $data = $check->fetch();
         $row = $check->rowCount();
+        // var_dump($data);
 
         if($row == 1)
         {
@@ -19,10 +19,10 @@
             {
                 $password = hash('sha256', $password);
 
-                if($data['password'] === $password)
+                if($data['user_password'] === $password)
                 {
                     
-                    $_SESSION['user'] = $data['pseudo'];
+                    $_SESSION['user'] = $data['user_pseudo'];
                     header('Location:discs.php');
 
 
