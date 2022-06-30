@@ -31,5 +31,5 @@
         }else header('Location:connexion.php?login_err=already');
     }else header ('Location:connexion.php');
 
-?>    
+?>
     

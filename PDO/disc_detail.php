@@ -95,6 +95,7 @@
                         title=" <?= $myArtist->disc_title; ?>"><br>
                         <br>
             </form>
+            
             <a class="btn btn-primary" href="disc_modif.php?id=<?= $myArtist->disc_id ?>">Modifier</a> 
             <a class="btn btn-primary" href="disc_delete.php?id=<?= $myArtist->disc_id ?>">Supprimer</a>
             <a href="discs.php" type="button" class="btn btn-primary">Retour</a>
