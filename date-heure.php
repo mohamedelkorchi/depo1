@@ -40,7 +40,7 @@ $ddate = "2019-07-19";
 <br>
 <?php
 $debut = new DateTime('now');
-$fin = new DateTime('2022-06-24');
+$fin = new DateTime('2022-07-27');
 $entredeux = $debut->diff($fin);
 echo $entredeux->format(" il reste  %R%a jours avant la fin du prochain MS");
 ?>
