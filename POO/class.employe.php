@@ -1,12 +1,13 @@
 <?php
+//include "class.magasin.php";
 
 class Employe
 {
-    public $_nom;
-    public $_prenom;
-    public $_dateEmbauche;
-    public $_salaire;
-    public $_poste;
+    private $_nom;
+    private $_prenom;
+    private $_dateEmbauche;
+    private $_salaire;
+    private $_poste;
     //public $_date;
     public $_duree;
 
@@ -44,7 +45,6 @@ class Employe
         
          var_dump("ca fait ".$this->_duree->format('%y')." ans que je suis dans l'entreprise. ");
     }
-
 }
 
 
